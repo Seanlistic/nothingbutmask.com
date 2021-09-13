@@ -1,1 +1,1 @@
-# nothingbutmask.com
+# nothinbutmask.com
