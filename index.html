@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nothin' But Mask</title>
+  
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #map{
+            height:620px;
+            width:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+  <script>
+      function initMap() {
+          var location = {lat: 3.175035781067367, lng: 113.04658844552904 };
+          var map = new google.maps.Map(document.getElementById("map"),{
+              zoom: 4,
+              center: location 
+          });
+          var marker = new google.maps.Marker({
+              position:location,
+              map: map
+          });
+      }
+     
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBIvzp6FacwHVOYIPxXJALjgJeoDp_QU0&callback=initMap">
+
+  </script>
+</body>
+</html>
